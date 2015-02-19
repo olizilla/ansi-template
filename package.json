@@ -1,0 +1,23 @@
+{
+  "name": "ansi-template",
+  "version": "0.1.0",
+  "description": "Super-simple templating for ansi-styles",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/*"
+  },
+  "keywords": [
+    "chalk",
+    "colors",
+    "template"
+  ],
+  "author": "olizilla",
+  "license": "ISC",
+  "devDependencies": {
+    "tape": "^3.5.0",
+    "chalk": "^0.5.1"
+  },
+  "dependencies": {
+    "ansi-styles": "^2.0.0"
+  }
+}
