@@ -1,10 +1,11 @@
 {
   "name": "ansi-template",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Super-simple templating for ansi-styles",
   "main": "index.js",
   "scripts": {
-    "test": "node test/*"
+    "test": "node test/test.js",
+    "eg": "node test/example"
   },
   "keywords": [
     "chalk",

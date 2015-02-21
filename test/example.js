@@ -1,0 +1,5 @@
+var chalkTpl = require('../index.js')
+console.log(chalkTpl('{red}this should be red{/red}'))
+console.log(chalkTpl('{bold}well {yellow}this should be yellow{/yellow} and bold{/bold}'))
+console.log(chalkTpl('{baa} leave unknown tags in the output {green}but this should be green{/green} {/baa}'))
+console.log(chalkTpl('{green}odd {underline}nesting{/green} is fine{/underline}'))
