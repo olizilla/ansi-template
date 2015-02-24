@@ -44,3 +44,13 @@ test('...but no funny stuffs, Lebowski', function (t) {
    'thwat the leet haxors; no funny stuff {toString}'
   )
 })
+
+test('all ansi styles are available', function (t) {
+  var styles = Object.keys(ansi)
+  t.plan(styles.length)
+  styles.map(function (style) {
+    var tpl = '{style}style{/style}'.replace(/style/g, style)
+    var expected = ansi[style].open + style + ansi[style].close
+    t.equal(chalkTpl(tpl), expected)
+  })
+})
